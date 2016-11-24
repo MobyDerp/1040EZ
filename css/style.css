@@ -1,0 +1,58 @@
+/*reset html*/
+html {
+  font-family: 'Noto Sans', sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+div{
+    margin-top:10px;
+}
+
+div.wrapper{
+margin-top: 50px;
+}
+
+div.incomeDirections{
+    display:inline-block;
+    margin-left: 50px;
+    float: left;
+}
+
+div.inner{
+    display:inline-block;
+    float:center;
+    margin-left: 20px;
+    background-color: #D8FBBA;
+    border-bottom: 1px solid;
+}
+
+.step1, .step2, .step3, .step4, .step5, .step6{
+    border-bottom: 1px solid;
+}
+
+div.input
+{
+    display:inline-block;
+    float: center;
+    margin-left: 20px;
+}
+
+label{
+    display: inline-block;
+    margin-top: 16px;
+}
+
+input{
+    text-align: right;
+}
+
+div.calculatedField{
+    background-color: #F8F9F9;  
+}

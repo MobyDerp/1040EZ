@@ -1,0 +1,117 @@
+/*reset html*/
+html {
+  font-family: 'Noto Sans', sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+div{
+    margin-top:10px;
+}
+
+div.wrapper{
+margin-top: 50px;
+}
+
+div.incomeDirections{
+    display:inline-block;
+    margin-left: 50px;
+    float: left;
+}
+
+div.inner{
+    display:inline-block;
+    float:center;
+    margin-left: 20px;
+    background-color: #D8FBBA;
+    border-bottom: 1px solid;
+}
+
+.step1, .step2, .step3, .step4, .step5, .step6{
+    border-bottom: 1px solid;
+}
+
+div.input
+{
+    display:inline-block;
+    float: center;
+    margin-left: 20px;
+}
+
+label{
+    display: inline-block;
+}
+
+.step{
+    padding-left: 10px;
+}
+
+.step.step5{
+    display: inline-block;
+    height:90px;
+}
+
+.desc{
+    width: 700px;
+    padding-left: 12px;
+
+}
+div.calculatedField{
+    background-color: #F8F9F9;  
+}
+
+table{
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    widht:100%;
+}
+
+td{
+    display: inline-block;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+}
+
+.numbering{
+    display: inline-block;
+}
+
+input{
+    display: inline-block;
+    text-align: right;
+    background-color: #FFFFFF;
+}
+
+.lastCol{
+   background-color: #FFFFFF;
+   width: 129px;
+   text-align: right;
+}
+
+.numbering.num5{
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.lastCol.num5.calculated_field{
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.step, .desc, .numbering{
+    background-color: #D8FBBA;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

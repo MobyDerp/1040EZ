@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>1040 EZ</title>
+    <link rel="stylesheet" type="text/css" href="css/style_copy.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+<div class="Income" >
+    <h1>This is In-Work</h1>
+    <div class ="incomeDirections"> <b>Income</b> <br> 
+        Attach your Form(s) W-2.<br>
+        here.<br>
+        Enclose, but do<br> 
+        not attach, any <br>
+        payment.
+    </div> 
+    
+    <table>
+        <tr>
+            <td class="step">1.</td>
+            <td class="desc">Wages, salaries, and tips. This should be shown in box 1 of your    
+            Form(s) W-2.</td>
+            <td class="numbering">1.</td>
+            <td class ="lastCol">
+                <input type="number" id="wage">
+            </td> 
+        </tr>
+        <tr>
+            <td class="step">2.</td>
+            <td class="desc">Taxable interest. If the total is over $1,500, you cannot use Form 1040EZ.</td>
+            <td class="numbering">2.</td>
+            <td class ="lastCol">
+                <input type="number" id="interest" onblur="errorMessage()">
+            </td> 
+        </tr>
+        <tr>
+            <td class="step">3.</td>
+            <td class="desc">Unemployment compensation and Alaska Permanent Fund dividends (see instructions).</td>
+            <td class="numbering">3.</td>
+            <td>
+                <input type="number" id="unemployment" onblur="calcAdjustedIncome()">
+            </td> 
+        </tr>
+        <tr>
+            <td class="step">4.</td>
+            <td class="desc">Add lines 1, 2, and 3. This is your adjusted gross income.</td>
+            <td class="numbering">4.</td>
+            <td class="lastCol calculated_field" id="adjustedIncome">Calculated Field</td>  
+        </tr>
+        <tr>
+            <td class="step step5">5.</td>
+            <td class="desc"> If someone can claim you (or your spouse if a joint return) as a dependent,            check<br>
+                the applicable box(es) below and enter the amount from the worksheet on back.                   <br>
+                <input type="checkbox" name="person" id="taxPayer" > You 
+                <input type="checkbox" name="person" id="spouse"> Spouse<br>
+                If no one can claim you (or your spouse if a joint return), enter $10,300 if                    <b>single</b>;<br>
+                $20,600 if <strong>married filing jointly</strong>. Check the following:
+                <input type="checkbox" name="status" id="single" onClick="calcExmeptions()" onClick="calcTaxableIncome()" > Single 
+            <input type="checkbox" name="status" id="married" onClick="calcExmeptions()" onClick = "calcTaxableIncome()"> Married Jointly<br></td>
+            <td class="numbering num5" >5.</td>
+            <td class="lastCol num5 calculated_field" id="exemptions"> Calculated Field</td> 
+        </tr>
+         <tr>
+            <td class="step">6.</td>
+            <td class="desc">Subtract line 5 from line 4. If line 5 is larger than line 4, enter -0-. </td>
+            <td>6.</td>
+            <td class="lastCol calculated_field" id ="taxableIncome">Calculated Field</td> 
+        </tr>
+    </table>
+    </div>
+    </div>
+  
+    
+<script src="taxLogic.js"></script>
+</body>
+</html>
